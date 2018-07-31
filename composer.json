@@ -1,0 +1,26 @@
+{
+    "name": "sahasovon/sms-system",
+    "description": "Sms package to send and manage sms with given host",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sovon Saha",
+            "email": "saha.sovon89@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Sahasovon\\SmsSystem\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sahasovon\\SmsSystem\\SmsSystemServiceProvider"
+            ]
+        }
+    }
+}
