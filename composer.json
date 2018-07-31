@@ -1,6 +1,7 @@
 {
     "name": "sahasovon/sms-system",
     "description": "Sms package to send and manage sms with given host",
+    "homepage": "https://github.com/sahasovon/sms-system",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -20,7 +21,10 @@
         "laravel": {
             "providers": [
                 "Sahasovon\\SmsSystem\\SmsSystemServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "SmsSystem": "Sahasovon\\SmsSystem\\Facades\\SmsSystemFacade"
+            }
         }
     }
 }
